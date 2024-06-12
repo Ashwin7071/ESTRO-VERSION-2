@@ -40,7 +40,14 @@ img#logo1 {
 	color: #00224D;
 
 }
+.show {
+	opacity: 1;
+	transform: translateX(0);
+	transition: all 0.60s ease;
+	/* padding-top: 1rem; */
+	color: #00224D;
 
+}
 .container {
 	max-width: 1200px;
 	margin: auto;
@@ -731,9 +738,21 @@ p {
 		font-size: 0.9em;
 		line-height: 1.2;
 	}
-
+	.one ul li a {
+		font-size: 3.9vw;
+		color: #5AB2FF;
+		transition: all 0.50s ease;
+		font-weight: 700;
+	}
 }
-
+@media(max-width: 583px)
+{
+	.one {
+		height: 13em;
+		width: 100%;
+		background-color: #008DDA;
+	}
+}
 /* @media(min-width: 1430px) {
 				.container-fluid p {
 					margin-top: -75px;
