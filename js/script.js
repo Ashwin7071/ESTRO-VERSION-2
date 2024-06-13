@@ -128,38 +128,28 @@ const links = document.querySelectorAll(".ban-image");
 
 
 
-
-            document.addEventListener("DOMContentLoaded", () => {
-               const options = {
-               threshold: 0.1,
-               };
+            // document.addEventListener("DOMContentLoaded", () => {
+            //    const options = {
+            //    threshold: 0.1,
+            //    };
             
-               const observer = new IntersectionObservers((entries) => {
-               entries.forEach((entry) => {
-                  if (entry.isIntersecting) {
-                     entry.target.classList.add('show');
-                  } else {
-                     entry.target.classList.remove('show');
-                  }
-               });
-               }, options);
+            //    const observer = new IntersectionObserver((entries) => {
+            //    entries.forEach((entry) => {
+            //       if (entry.isIntersecting) {
+            //          entry.target.classList.add('show');
+            //       } else {
+            //          entry.target.classList.remove('show');
+            //       }
+            //    });
+            //    }, options);
             
-               const sect = document.querySelectorAll('p')
-               sect.forEach((p) => {
-               observer.observe(p);
-               });
-               });
-
-
-
-
-
-
-// document.querySelectorAll(".tip")[1].addEventListener("click",function(){
-//    document.querySelectorAll("p")[0].innerHTML="This is a demo paragraph.";
-//  });
-
-
+            //    const sect = document.querySelectorAll('p')
+            //    sect.forEach((p) => {
+            //    observer.observe(p);
+            //    });
+            //    });
+   
+        
 
 
 
