@@ -5,6 +5,7 @@
 		font-family: "Montserrat", sans-serif;
 		font-weight: 400;
 		overflow-x: hidden;
+		background-image:url('../img/61769.jpg');
 
 	}
 
@@ -28,13 +29,13 @@
 
 	.hide {
 		opacity: 0;
-		transform: translateX(-80%);
+		transform: translateY(-80%);
 		transition: all 0.90s ease;
 	}
 
 	.showS {
 		opacity: 1;
-		transform: translateX(0);
+		transform: translateY(0);
 		transition: all 0.60s ease;
 		/* padding-top: 1rem; */
 		color: #00224D;
@@ -189,15 +190,6 @@
 		background-color: #ffffff;
 	}
 
-	.cover1 {
-		z-index: 10;
-		position: absolute;
-		top: -100%;
-		/* background-color: #ff0000; */
-	}
-
-
-
 	.down-banner .btn-light:hover {
 		background-color: #008DDA;
 		border: none;
@@ -230,7 +222,7 @@
 	}
 
 	.header .menu>ul>li .sub-menu.mega-menu>.list-item>ul>li>a {
-		padding: 10px 0;
+		padding: 6px 0;
 		display: inline-block;
 		font-size: 15px;
 		color: #555555;
@@ -285,7 +277,7 @@
 	/* banner section */
 	.banner-section {
 		background-image: url('../img/Family.jpg');
-		background-size: cover;
+		background-size:cover;
 		background-position: center;
 		background-position: 0px 0px;
 		height: 600px;
@@ -338,8 +330,9 @@
 
 	#sin {
 		font-size: 1em;
-		line-height: 1.2;
-		font-weight: 100;
+    line-height: 1.2;
+    font-weight: 100;
+    padding-top: 13px;
 	}
    #sin-2
    {
@@ -347,8 +340,22 @@
 	margin-bottom: 2px;
    }
 	/* RESPONSIVENESSS-------------------------------------------------------------------------------- */
-
-
+ #min-1
+ {
+	/* background-image:url('../img/importance-of-quality-control-during-drug-development-368119-960x540.jpg'); */
+	position: relative;
+	bottom:14%;
+ }
+ .min-2
+ {
+	
+	background-repeat: no-repeat;
+	width: 100%;
+	background-size: cover;
+ }
+footer .row{
+	width: 100%;
+}
 	@media(min-width: 992px) {
 		.header .menu>ul>li.menu-item-has-children:hover .sub-menu {
 			margin-top: 0;
@@ -386,14 +393,10 @@
 			line-height: 1.4;
 		}
 
-		.cover1 {
-			z-index: 10;
-			position: relative;
-			bottom: 195%;
-		}
+	
 	}
 
-	@media(min-width: 1430px) {
+	@media(min-width: 1388px) {
 		.ban-para {
 			color: rgb(255, 255, 255);
 			font-size: 2.5em;
@@ -405,7 +408,11 @@
 			width: 100%;
 			background-color: #008DDA;
 		}
-
+		#min-1
+		{
+		   position: relative;
+		   bottom:22%
+		}
 	}
 
 	@media(max-width: 991px) {
